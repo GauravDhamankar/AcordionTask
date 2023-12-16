@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% ); */
+            background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
+        }
+
+        #navCss {
+            background-image: linear-gradient(108.7deg,
+                    rgba(221, 22, 224, 1) 11%,
+                    rgba(111, 22, 190, 1) 88.2%);
+        }
+
+        .accordion-button {
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main body -->
+    <div class="container-fuild">
+
+        <!-- Main Navbar -->
+        <nav id="navCss" class="navbar navbar-expand-md bg-body-tertiary p-md-4 p-2 shadow-sm p-3 mb-5 bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button class="btn btn-dark btn-sm my-md-0 my-1"><a class="nav-link active text-light" href="http://127.0.0.1:5500/TabsAndAccordion/taskmain.html">Home</a></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-dark btn-sm mx-md-3 my-md-0 my-1"><a class="nav-link active text-light" aria-current="page" href="http://127.0.0.1:5500/TabsAndAccordion/table.html">Table</a></button>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="http://127.0.0.1:5500/TabsAndAccordion/view.html">View</a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Body content -->
+        <div class="container">
+            <div class="col-10 border my-md-5 my-3 mx-auto shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                <nav class="p-3">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active text-dark" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">
+                            Profile
+                        </button>
+
+                        <button class="nav-link text-dark" id="nav-profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">
+                            Account
+                        </button>
+
+                        <button class="nav-link text-dark" id="nav-Family-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-Family" type="button" role="tab" aria-controls="nav-Family"
+                            aria-selected="false">
+                            Family
+                        </button>
+
+                        <button class="nav-link text-dark" id="nav-employment-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-employment" type="button" role="tab" aria-controls="nav-employment"
+                            aria-selected="false">
+                            Employment
+                        </button>
+
+                        <button class="nav-link text-dark" id="nav-assets-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-assets" type="button" role="tab" aria-controls="nav-assets"
+                            aria-selected="false">
+                            Assets
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Tab content -->
+                <div class="container">
+                    <!-- <form action="" id="myForm"> -->
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!-- 1 Personal content -->
+                        <div class="tab-pane fade show active my-2" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+
+                            <!-- 1 personal Accordion -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Name
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="input1" class="form-label">First Name
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="fname" placeholder="John" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input2" class="form-label">Middle Name
+                                                </label>
+                                                <input type="text" class="form-control" id="mname" placeholder="Mack" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input3" class="form-label">Last Name
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="lname" placeholder="Doe" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Contact
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="input4" class="form-label">Mobile
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="tel" class="form-control" id="tel" placeholder="9876655443"
+                                                    maxlength="10" minlength="10" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input5" class="form-label">Email
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="example@gmail.com" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Address
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="input6" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="add1"
+                                                    placeholder="1234 main street" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input7" class="form-label">Address 2</label>
+                                                <input type="text" class="form-control" id="add2"
+                                                    placeholder="Appartment or floor" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input8" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="city"
+                                                    placeholder="Mumbai" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- first Submit button  -->
+                                <div class="d-grid gap-2 col-4 my-3 mx-auto">
+                                    <button class="btn btn-primary" type="button" onclick="addPersonalToLocal()">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 Account content -->
+                        <div class="tab-pane fade my-2" id="nav-profile" role="tabpanel"
+                            aria-labelledby="nav-profile-tab" tabindex="0">
+                            <!-- 2 Account Accordion -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Branch Details
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="input1" class="form-label">Bank Name
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="brname"
+                                                    placeholder="Bank of India" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input2" class="form-label">Branch
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="brLoc"
+                                                    placeholder="Wakad" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input3" class="form-label">Zip
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="tel" class="form-control" id="zip" placeholder="411331"
+                                                    maxlength="6" minlength="6" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Indentity
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="input1" class="form-label">Adhar number
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="tel" class="form-control" id="adhar"
+                                                    placeholder="988776655443" maxlength="12" minlength="12" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input2" class="form-label">PAN number</label>
+                                                <input type="number" class="form-control" id="pan"
+                                                    placeholder="ABCD1234" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Account Details
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="input1" class="form-label">Account number
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="tel" class="form-control" id="accNum"
+                                                    placeholder="123456789876" maxlength="10" minlength="12" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="input2" class="form-label">IFSC code
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="ifsc"
+                                                    placeholder="ABCD1234567" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Submit button  -->
+                            <div class="d-grid gap-2 col-4 mx-auto my-3">
+                                <button class="btn btn-primary" type="button" onclick="addAccountToLocal()">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 3 Family content -->
+                        <div class="tab-pane fade my2" id="nav-Family" role="tabpanel" aria-labelledby="nav-Family-tab"
+                            tabindex="0">
+                            <!-- Family accordion -->
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            Father's Details
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="First name *"
+                                                        aria-label="First name" id="ffname" />
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Last name"
+                                                        aria-label="Last name" id="flname" />
+                                                </div>
+                                                <div class="col">
+                                                    <input type="tel" class="form-control" placeholder="mobile number *"
+                                                        aria-label="Last name" id="fmob" maxlength="10"
+                                                        minlength="10" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            Mother's Details
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="row g-3">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="First name"
+                                                        aria-label="Last name" id="mfname" />
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Last name"
+                                                        aria-label="Last name" id="mlname" />
+                                                </div>
+                                                <div class="col">
+                                                    <input type="tel" class="form-control" placeholder="mobile number"
+                                                        aria-label="Last name" id="mmob" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            Family Adress
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="input-group">
+                                                <span class="input-group-text">Adress</span>
+                                                <textarea class="form-control" aria-label="With textarea"
+                                                    id="faddr"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- third Submit button  -->
+                            <div class="d-grid gap-2 col-4 mx-auto my-3">
+                                <button class="btn btn-primary" type="button" onclick="addFamilyToLocal()">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 4 Employment content -->
+                        <div class="tab-pane fade my2" id="nav-employment" role="tabpanel"
+                            aria-labelledby="nav-employment-tab" tabindex="0">
+                            <!-- Employment Accordiion -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Previous Company
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Company Name
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="cpname"
+                                                    placeholder="xyz Company / Fresher" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Company
+                                                    Address</label>
+                                                <input type="text" class="form-control" id="cpaddr"
+                                                    placeholder="main street" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Experience
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Previous Job
+                                                    Role</label>
+                                                <input type="text" class="form-control" id="jobrole"
+                                                    placeholder="Enter Fresher if don't have experience" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Year of
+                                                    Experience <sup class="text-danger"><strong>*</strong></sup>
+                                                </label>
+                                                <input type="number" class="form-control" id="expr"
+                                                    placeholder="0 if fresher" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Technologies
+                                                    Experience</label>
+                                                <input type="text" class="form-control" id="skills"
+                                                    placeholder="ex. Java,Html etc" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Salary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Current CTC per
+                                                    year</label>
+                                                <input type="number" class="form-control" id="currentCTC"
+                                                    placeholder="ex.5.2" />
+                                            </div>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Expcted CTC per
+                                                    year
+                                                </label>
+                                                <input type="number" class="form-control" id="expectCTC"
+                                                    placeholder="ex. 8.5" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- third Submit button  -->
+                            <div class="d-grid gap-2 col-4 mx-auto my-3">
+                                <button class="btn btn-primary" type="button" onclick="addEmploymentToLocal()">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 5 Assets content -->
+                        <div class="tab-pane fade my2" id="nav-assets" role="tabpanel" aria-labelledby="nav-assets-tab"
+                            tabindex="0">
+                            <!-- Assets Accordion -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Technical Skills
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Extra Curriculam
+                                                    <sup class="text-danger"><strong>*</strong></sup></label>
+                                                <input type="text" class="form-control" id="curriculam"
+                                                    placeholder="ex. xyz" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Soft Skills
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Enter Soft
+                                                    Skills</label>
+                                                <input type="text" class="form-control" id="softskills"
+                                                    placeholder="ex. Travelling" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            About You
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here"
+                                                    id="about"></textarea>
+                                                <label for="floatingTextarea">About yourself</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- third Submit button  -->
+                            <div class="d-grid gap-2 col-4 mx-auto my-3">
+                                <button class="btn btn-primary" type="button" onclick="addAssetsToLocal()">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===================================== JavaScript ========================================= -->
+    <script>
+
+        // VALIDATION
+        const onlyLetters = /^[A-Za-z\s]+$/;
+        const emailValid = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+
+        // ================================================================= //
+        // 1 PERSONAL DETAILS STORING TO LOCAL STORAGE
+        function addPersonalToLocal() {
+
+            let fname = document.getElementById("fname").value;
+            let mname = document.getElementById("mname").value;
+            let lname = document.getElementById("lname").value;
+            let tel = document.getElementById("tel").value;
+            let email = document.getElementById("email").value;
+            let add1 = document.getElementById("add1").value;
+            let add2 = document.getElementById("add2").value;
+            let city = document.getElementById("city").value;
+            let brname = document.getElementById("brname").value
+
+            if (!fname.match(onlyLetters) && fname.value == null) {
+                alert("Enter valid first name. Do not keep it blank");
+            } else if (mname.value == null && !mname.match(onlyLetters)) {
+                alert("Enter valid middle name. Do not keep it blank");
+            } else if (!lname.match(onlyLetters) && lname.value == null) {
+                alert("Enter valid last name. Do not keep it blank");
+            } else if (!tel.match(/\d{10}/g) && tel.value == null) {
+                alert("Enter valid mobile. Do not keep it blank");
+            } else if (!email.match(emailValid) && email.value == null) {
+                alert("Enter valid email. Do not keep it blank");
+            } else if (!brname.match(onlyLetters) && brname.value == null) {
+                alert("Enter valid bank name. Do not keep it blank");
+            }
+            else {
+                addPersonalToLocalMain();
+            }
+        }
+
+        function addPersonalToLocalMain() {
+            let arr = localStorage.getItem("personal_info")
+                ? JSON.parse(localStorage.getItem("personal_info"))
+                : [];
+
+            let obj = {
+                fname: document.getElementById("fname").value,
+                mname: document.getElementById("mname").value,
+                lname: document.getElementById("lname").value,
+                tel: document.getElementById("tel").value,
+                email: document.getElementById("email").value,
+                add1: document.getElementById("add1").value,
+                add2: document.getElementById("add2").value,
+                city: document.getElementById("city").value,
+            };
+
+            arr.push(obj);
+            localStorage.setItem("personal_info", JSON.stringify(arr));
+
+            document.getElementById("fname").value = "";
+            document.getElementById("mname").value = "";
+            document.getElementById("lname").value = "";
+            document.getElementById("tel").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("add1").value = "";
+            document.getElementById("add2").value = "";
+            document.getElementById("city").value = "";
+
+        }
+
+        // ================================================================= //
+        // 2 ACCOUNT DETAILS STORING INTO LOCAL STORAGE
+        function addAccountToLocal() {
+
+            let brname = document.getElementById("brname").value;
+            let brloc = document.getElementById("brLoc").value;
+            let zip = document.getElementById("zip").value;
+            let adhar = document.getElementById("adhar").value;
+            let pan = document.getElementById("pan").value;
+            let accNum = document.getElementById("accNum").value;
+            let ifsc = document.getElementById("ifsc").value;
+            let ffname = document.getElementById("ffname").value
+
+            if (!brname.match(onlyLetters) && brname.value == null) {
+                alert("Enter valid bank name. Do not keep it blank");
+            } else if (!brloc.match(onlyLetters) && brloc.value == null) {
+                alert("Enter valid branch. Do not keep it blank");
+            } else if (!zip.match(/\d{6}/g) && zip.value == null) {
+                alert("Enter six digit zip. Do not keep it blank");
+            } else if (!adhar.match(/\d{12}/g)) {
+                alert("Enter 12 digit adhar. Do not keep it empty");
+            } else if (!accNum.match(/\d{10}/g)) {
+                alert("Enter 10 digit account number. Do not keep it empty");
+            } else if (!ffname.match(onlyLetters) && ffname.value == null) {
+                alert(`Enter valid Father's name. Do not keep it empty`)
+            } else {
+                addAccountToLocalMain();
+            }
+        }
+
+        function addAccountToLocalMain() {
+            let arr = localStorage.getItem("acc_info")
+                ? JSON.parse(localStorage.getItem("acc_info"))
+                : [];
+
+            let obj = {
+                brname: document.getElementById("brname").value,
+                brloc: document.getElementById("brLoc").value,
+                zip: document.getElementById("zip").value,
+                adhar: document.getElementById("adhar").value,
+                pan: document.getElementById("pan").value,
+                accNum: document.getElementById("accNum").value,
+                ifsc: document.getElementById("ifsc").value,
+            };
+
+            arr.push(obj);
+            localStorage.setItem("acc_info", JSON.stringify(arr));
+
+            document.getElementById("brname").value = "";
+            document.getElementById("brLoc").value = "";
+            document.getElementById("zip").value = "";
+            document.getElementById("adhar").value = "";
+            document.getElementById("pan").value = "";
+            document.getElementById("accNum").value = "";
+            document.getElementById("ifsc").value = "";
+        }
+
+
+        // 3 ====================================================== //
+        // FAMILY DETAILS STORING IN LOCAL STORAGE
+        function addFamilyToLocal() {
+
+            let ffname = document.getElementById("ffname").value;
+            let fmob = document.getElementById("fmob").value;
+            let cpname = document.getElementById("cpname").value;
+
+            if (!ffname.match(onlyLetters) && ffname.value == null) {
+                alert(`Enter valid Father's name. Do not keep it empty`)
+            } else if (!fmob.match(/\d{10}/g)) {
+                alert(`Enter valid Father's mobile number. Do not keep it empty `)
+            } else if (!cpname.match(onlyLetters)) {
+                alert("Enter valid company name. Do not keep it empty");
+            } else {
+                addFamilyToLocalMain();
+            }
+        }
+
+        function addFamilyToLocalMain() {
+            let arr = localStorage.getItem("family_info")
+                ? JSON.parse(localStorage.getItem("family_info"))
+                : [];
+
+            let obj = {
+                ffname: document.getElementById("ffname").value,
+                fmob: document.getElementById("fmob").value,
+                flname: document.getElementById("flname").value,
+                mfname: document.getElementById("mfname").value,
+                mmob: document.getElementById("mmob").value,
+                mlname: document.getElementById("mlname").value,
+                addr: document.getElementById("faddr").value,
+            };
+
+            arr.push(obj);
+            localStorage.setItem("family_info", JSON.stringify(arr));
+
+            document.getElementById("ffname").value = "";
+            document.getElementById("fmob").value = "";
+            document.getElementById("flname").value = "";
+            document.getElementById("mfname").value = "";
+            document.getElementById("mmob").value = "";
+            document.getElementById("mlname").value = "";
+            document.getElementById("faddr").value = "";
+            // location.reload();
+        }
+
+        //  ==================================================== //
+        // 4 EMPLOYMENT DETAILS STORE TO LOCAL STORAGE
+        function addEmploymentToLocal() {
+
+            let cpname = document.getElementById("cpname").value;
+            let currentCTC = document.getElementById("currentCTC").value;
+            let expectCTC = document.getElementById("expectCTC").value;
+            let expr = document.getElementById("expr").value;
+            let skills = document.getElementById('skills').value;
+            let curriculam = document.getElementById('curriculam').value;
+
+            if (!cpname.match(onlyLetters)) {
+                alert("Enter valid company name. Do not keep it empty");
+            } else if (!expr.match(/^[0-9]/g)) {
+                alert('Enter valid Experience')
+            } else if (!skills.match(onlyLetters) && skills.value == null) {
+                alert(`Enter valid skills. Do not keep it empty`);
+            } else if (!curriculam.match(onlyLetters) && curriculam.value == null) {
+                alert(`Enter valid curiculam. Do not keep it empty`)
+            } else {
+                addEmploymentToLocalMain();
+            }
+        }
+
+        function addEmploymentToLocalMain() {
+            let arr = localStorage.getItem("emp_info")
+                ? JSON.parse(localStorage.getItem("emp_info"))
+                : [];
+
+            let obj = {
+                cpname: document.getElementById("cpname").value,
+                cpaddr: document.getElementById("cpaddr").value,
+                jobrole: document.getElementById("jobrole").value,
+                expr: document.getElementById("expr").value,
+                skills: document.getElementById("skills").value,
+                currentCTC: document.getElementById("currentCTC").value,
+                expectCTC: document.getElementById("expectCTC").value,
+            };
+
+            arr.push(obj);
+            localStorage.setItem("emp_info", JSON.stringify(arr));
+
+            document.getElementById("cpname").value = "";
+            document.getElementById("cpaddr").value = "";
+            document.getElementById("jobrole").value = "";
+            document.getElementById("expr").value = "";
+            document.getElementById("skills").value = "";
+            document.getElementById("currentCTC").value = "";
+            document.getElementById("expectCTC").value = "";
+        }
+
+        // 5 =================================================== //
+        // ASSETS DETAILS STORE TO LOCAL STORAGE
+        function addAssetsToLocal() {
+
+            let arr = localStorage.getItem("assets_info")
+                ? JSON.parse(localStorage.getItem("assets_info"))
+                : [];
+
+            let curriculam = document.getElementById("curriculam").value;
+            let softskill = document.getElementById("softskills").value;
+            let about = document.getElementById('about').value;
+            let fname = document.getElementById("fname").value;
+
+            if (!curriculam.match(onlyLetters) && curriculam.value == null) {
+                alert(`Enter valid curiculam. Do not keep it empty`);
+            } else if(!fname.match(onlyLetters) && fname.value == null) {
+                alert(`Enter valid first name. Do not keep it blank`);
+            }
+            else {
+
+                addPersonalToLocalMain();
+                addAccountToLocalMain();
+                addFamilyToLocalMain();
+                addEmploymentToLocalMain();
+
+                let obj = {
+                    curriculam: curriculam,
+                    softskill: softskill,
+                    about: about
+                };
+
+                arr.push(obj);
+                localStorage.setItem("assets_info", JSON.stringify(arr));
+
+                document.getElementById("curriculam").value = "";
+                document.getElementById("softskills").value = "";
+
+                alert('Form submitted successfully');
+                location.reload();
+            }
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | TABLE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-image: radial-gradient(circle 993px at 0.5% 50.5%,
+                    rgba(137, 171, 245, 0.37) 0%,
+                    rgba(245, 247, 252, 1) 100.2%);
+        }
+
+        #navCss {
+            background-image: linear-gradient(108.7deg,
+                    rgba(221, 22, 224, 1) 11%,
+                    rgba(111, 22, 190, 1) 88.2%);
+        }
+    </style>
+</head>
+
+<body class="bg-body-tertiary">
+    <!-- Main Navbar -->
+
+    <nav id="navCss" class="navbar navbar-expand-md bg-body-tertiary p-md-4 p-2 shadow-sm p-3 mb-5 bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-dark btn-sm my-md-0 my-1">
+                            <a class="nav-link active text-light"
+                                href="http://127.0.0.1:5500/TabsAndAccordion/taskmain.html">Home</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-dark btn-sm mx-md-3 my-md-0 my-1">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="http://127.0.0.1:5500/TabsAndAccordion/table.html">Table</a>
+                        </button>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="http://127.0.0.1:5500/TabsAndAccordion/view.html">View</a>
+                    </li> -->
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="searchvalue" oninput="personalCheck()" />
+                    <!-- <button class="btn btn-success" type="button">
+                        Search
+                    </button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- View -->
+    <div class="container">
+        <div class="row">
+            <div class="col p-0 m-0" id="empDetails"></div>
+        </div>
+    </div>
+
+    <div class="container" id="second_table" style="display: none">
+        <div class="row my-2 my-md-4">
+            <div class="col-md-6 d-inline-block">
+                <!-- PERSONAL TABLE -->
+                <h4 class="text-center">Personal Details</h4>
+                <table class="table table-hover table-dark shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <tr>
+                        <td>First Name</td>
+                        <td id="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Middle Name</td>
+                        <td id="mid_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td id="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td id="mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Address1</td>
+                        <td id="address1"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Address2</td>
+                        <td id="address2"></td>
+                    </tr> -->
+                    <tr>
+                        <td>City</td>
+                        <td id="city"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6 d-inline-block">
+                <!-- ACCOUNT TABLE -->
+                <h4 class="text-center">Account Details</h4>
+                <table class="table table-hover table-dark shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <tr>
+                        <td>Bank Name</td>
+                        <td id="bank_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td id="branch"></td>
+                    </tr>
+                    <tr>
+                        <td>Zip</td>
+                        <td id="zip"></td>
+                    </tr>
+                    <tr>
+                        <td>Adhar number</td>
+                        <td id="adhar"></td>
+                    </tr>
+                    <tr>
+                        <td>PAN number</td>
+                        <td id="pan"></td>
+                    </tr>
+                    <tr>
+                        <td>Account number</td>
+                        <td id="acc_num"></td>
+                    </tr>
+                    <tr>
+                        <td>IFSC code</td>
+                        <td id="ifsc_code"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row my-2 my-md-4">
+            <div class="col-md-6 d-inline-block">
+                <h4 class="text-center">Family Details</h4>
+                <table class="table table-hover table-dark shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <tr>
+                        <td>Father's First Name</td>
+                        <td id="ffname"></td>
+                    </tr>
+                    <tr>
+                        <td>Father's Last Name</td>
+                        <td id="flname"></td>
+                    </tr>
+                    <tr>
+                        <td>Father's Mobile</td>
+                        <td id="fmob"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother's First Name</td>
+                        <td id="mfname"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Last Name</td>
+                        <td id="mlname"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Mobile</td>
+                        <td id="mmob"></td>
+                    </tr>
+                    <tr>
+                        <td>Family Address</td>
+                        <td id="addr"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6 d-inline-block">
+                <h4 class="text-center">Employment Details</h4>
+                <table class="table table-hover table-dark shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <tr>
+                        <td>Company Name</td>
+                        <td id="cpname"></td>
+                    </tr>
+                    <tr>
+                        <td>Company Address</td>
+                        <td id="cpaddr"></td>
+                    </tr>
+                    <tr>
+                        <td>Job Title</td>
+                        <td id="jobrole"></td>
+                    </tr>
+                    <tr>
+                        <td>Experience</td>
+                        <td id="expr"></td>
+                    </tr>
+                    <tr>
+                        <td>Technologies</td>
+                        <td id="skills"></td>
+                    </tr>
+                    <tr>
+                        <td>Current CTC</td>
+                        <td id="currentCTC"></td>
+                    </tr>
+                    <tr>
+                        <td>Expected CTC</td>
+                        <td id="expectCTC"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row my-2 my-md-4">
+            <div class="col-md-8 mx-md-auto">
+                <h4 class="text-center">Assets Details</h4>
+                <table class="table table-hover table-dark shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <tr>
+                        <td>Extra Curriculam</td>
+                        <td id="curriculam"></td>
+                    </tr>
+                    <tr>
+                        <td>Soft Skills</td>
+                        <td id="softskill"></td>
+                    </tr>
+                    <tr>
+                        <td>About Yourself</td>
+                        <td id="about"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+
+        let myTable = document.getElementById("myTable");
+
+        let arr = localStorage.getItem("personal_info")
+            ? JSON.parse(localStorage.getItem("personal_info"))
+            : [];
+        // console.log(arr[0].fname, arr[0].lname, arr[0].email);
+
+        function insertRowIntoTable() {
+            let table = `<table id="myTable" class="table table-hover table-responsive table-success shadow-lg p-3  bg-body-tertiary rounded">`;
+
+            table += `<thead class="table-warning">
+                         <tr>
+                             <th scope="row">First Name</th>
+                             <th scope="row">Last Name</th>
+                             <th scope="row">Email</th>
+                             <th scope="row">Action</th>
+                         </tr>
+                    </thead>`;
+
+            arr.forEach((item, index) => {
+                table += `<tr>`;
+                // table += `<td>${index}</td>`;
+                table += `<td>${item.fname}</td>`;
+                table += `<td>${item.lname}</td>`;
+                table += `<td>${item.email}</td>`;
+                table += `<td><button type="button" class="btn btn-primary btn-sm" onclick="viewData(${index})">View</button><button class="btn btn-danger btn-sm mx-1" onclick="deleteData(this)">Delete</button></td>`;
+                table += `</tr>`;
+            });
+
+            table += `</table>`;
+
+            document.getElementById("empDetails").innerHTML = table;
+        }
+
+        insertRowIntoTable();
+
+        // View Data into multiple table
+        function viewData(rowNum) {
+
+            let second_table = document.getElementById("second_table");
+            second_table.style.display = "block";
+
+            let finalRow = rowNum;
+
+            let personal = JSON.parse(localStorage.getItem("personal_info"));
+            let emp_info = JSON.parse(localStorage.getItem("emp_info"));
+            let acc_info = JSON.parse(localStorage.getItem("acc_info"));
+            let family_info = JSON.parse(localStorage.getItem("family_info"));
+            let assets_info = JSON.parse(localStorage.getItem("assets_info"));
+
+            // Personal Details displaying in Table
+            document.getElementById("first_name").innerHTML =
+                personal[finalRow].fname;
+            document.getElementById("mid_name").innerHTML =
+                personal[finalRow].mname;
+            document.getElementById("last_name").innerHTML =
+                personal[finalRow].lname;
+            document.getElementById("mobile").innerHTML = personal[finalRow].tel;
+            document.getElementById("email").innerHTML = personal[finalRow].email;
+            document.getElementById("address1").innerHTML = personal[finalRow].add1;
+            document.getElementById("city").innerHTML = personal[finalRow].city;
+            // document.getElementById('address2').innerHTML = personal[finalRow].add2;
+
+            // Account Details displaying in table
+            document.getElementById("bank_name").innerHTML =
+                acc_info[finalRow].brname;
+            document.getElementById("branch").innerHTML = acc_info[finalRow].brloc;
+            document.getElementById("zip").innerHTML = acc_info[finalRow].zip;
+            document.getElementById("adhar").innerHTML = acc_info[finalRow].adhar;
+            document.getElementById("pan").innerHTML = acc_info[finalRow].pan;
+            document.getElementById("acc_num").innerHTML =
+                acc_info[finalRow].accNum;
+            document.getElementById("ifsc_code").innerHTML =
+                acc_info[finalRow].ifsc;
+
+            // Family Details displaying in table
+            document.getElementById("ffname").innerHTML =
+                family_info[finalRow].ffname;
+            document.getElementById("flname").innerHTML =
+                family_info[finalRow].flname;
+            document.getElementById("fmob").innerHTML = family_info[finalRow].fmob;
+            document.getElementById("mfname").innerHTML =
+                family_info[finalRow].mfname;
+            document.getElementById("mlname").innerHTML =
+                family_info[finalRow].mlname;
+            document.getElementById("mmob").innerHTML = family_info[finalRow].mmob;
+            document.getElementById("addr").innerHTML = family_info[finalRow].addr;
+
+            // Employment Details displaying in table
+            document.getElementById("cpname").innerHTML = emp_info[finalRow].cpname;
+            document.getElementById("cpaddr").innerHTML = emp_info[finalRow].cpaddr;
+            document.getElementById("jobrole").innerHTML =
+                emp_info[finalRow].jobrole;
+            document.getElementById("expr").innerHTML = emp_info[finalRow].expr;
+            document.getElementById("skills").innerHTML = emp_info[finalRow].skills;
+            document.getElementById("currentCTC").innerHTML =
+                emp_info[finalRow].currentCTC;
+            document.getElementById("expectCTC").innerHTML =
+                emp_info[finalRow].expectCTC;
+
+            // Assets details displaying in table
+            document.getElementById("curriculam").innerHTML =
+                assets_info[finalRow].curriculam;
+            document.getElementById("softskill").innerHTML =
+                assets_info[finalRow].softskill;
+            document.getElementById("about").innerHTML =
+                assets_info[finalRow].about;
+        }
+
+        // personal Check new
+        function personalCheck() {
+            let searchvalue = document.getElementById("searchvalue").value;
+
+            // console.log(searchvalue);
+
+            let personal_info = localStorage.getItem("personal_info")
+                ? JSON.parse(localStorage.getItem("personal_info"))
+                : [];
+
+            let table = `<table id="myTable" class="table table-hover table-responsive table-success shadow-lg p-3  bg-body-tertiary rounded">
+                            <thead class="table-warning">
+                                <tr>
+                                    <th scope="row">First Name</th>
+                                    <th scope="row">Last Name</th>
+                                    <th scope="row">Email</th>
+                                    <th scope="row">Action</th>
+                                </tr>
+                           </thead>`;
+
+            let tbody = "";
+
+            personal_info.map((item, index) => {
+                // console.log(item);
+
+                let first_name = item.fname;
+                let searchvalue2 = new RegExp(searchvalue, "gi");
+
+                if (searchvalue2.test(first_name)) {
+                    // console.log(first_name);
+                    tbody += `<tr>
+                        <td>${item.fname}</td>
+                        <td>${item.lname}</td>
+                        <td>${item.email}</td>
+                        <td><button type="button" class="btn btn-primary btn-sm" onclick="viewData(${index})">View</button></td>
+                        </tr>`;
+                }
+
+                let finalTable = table + tbody + "</table>";
+
+                document.getElementById("empDetails").innerHTML = finalTable;
+            });
+        }
+
+
+        function deleteData(rowNum) {
+            
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
